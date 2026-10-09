@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Almen Drift. Opgaveliste til viceværten, i stedet for mail og kalender.</title>
+<meta name="description" content="Almen Drift. Opgaveliste til viceværten, i stedet for mail og kalender.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Almen Drift</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu"><ul><li><a href="saadan-virker-det.html">Sådan virker det</a></li><li><a href="roller.html">Roller</a></li><li><a href="proev.html">Prøv</a></li><li><a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a></li></ul></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+<h1>Fra mail og kalender til en liste, viceværten kan lukke med et foto.</h1>
+<p class="lead">De fleste sager starter i en mail. Derefter skal de lande hos viceværten, gerne med en dato, og nogen skal kunne se, om de er gjort. Almen Drift er det hul. Ikke et nyt administrationssystem.</p>
+</section>
+<ul class="points">
+<li><strong>Dagens liste.</strong> Viceværten ser dagens opgaver på telefonen.</li>
+<li><strong>Foto, når opgaven lukkes.</strong> Så kan man se, at den er gjort.</li>
+<li><strong>Årshjul lagt ind én gang.</strong> Tag, legeplads og eftersyn ligger med dato, ikke kun i Outlook.</li>
+</ul>
+<figure class="shot"><img src="img/01-i-dag.png" alt="Appens I dag-visning på telefon med viceværtens åbne opgaver" width="390" height="844"></figure>
+<section class="cta">
+<a class="btn" href="mailto:frederik@almendrift.dk">Skriv til frederik@almendrift.dk</a>
+<p>20 minutter, uden at I skal beslutte noget.</p>
+</section>
+<section class="note">
+<h2>Det er det ikke</h2>
+<p>Ingen husleje. Intet MitID. Ingen beboerapp. Almen Drift er et driftslag oven på det, I allerede har.</p>
+</section>
+</main>
+<footer class="foot"><div class="wrap">Almen Drift · <a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a> · almendrift.dk</div></footer>
+<script>
+var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>

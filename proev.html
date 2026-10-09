@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prøv · Almen Drift</title>
+<meta name="description" content="Almen Drift. Opgaveliste til viceværten, i stedet for mail og kalender.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Almen Drift</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu"><ul><li><a href="saadan-virker-det.html">Sådan virker det</a></li><li><a href="roller.html">Roller</a></li><li><a href="proev.html" aria-current="page">Prøv</a></li><li><a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a></li></ul></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Prøv</h1>
+<p>Det er et forsøg. Ingen binding. I kan stoppe, når I vil.</p>
+<p><a class="btn" href="mailto:frederik@almendrift.dk">Skriv til frederik@almendrift.dk</a></p>
+<p>Se appen: <a href="https://almen-drift.vercel.app">almen-drift.vercel.app</a></p>
+<h2>På telefonen</h2>
+<p>Åbn linket i Safari eller Chrome, tryk Del og vælg Føj til hjemmeskærm. Det er stadig hjemmesiden, men den ligner en app.</p>
+</main>
+<footer class="foot"><div class="wrap">Almen Drift · <a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a> · almendrift.dk</div></footer>
+<script>
+var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>

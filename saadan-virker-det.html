@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sådan virker det · Almen Drift</title>
+<meta name="description" content="Almen Drift. Opgaveliste til viceværten, i stedet for mail og kalender.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Almen Drift</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu"><ul><li><a href="saadan-virker-det.html" aria-current="page">Sådan virker det</a></li><li><a href="roller.html">Roller</a></li><li><a href="proev.html">Prøv</a></li><li><a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a></li></ul></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Sådan virker det</h1>
+<ol class="steps">
+<li><h2>1. Opret opgaven</h2><p>Når beboeren skriver, oprettes opgaven i appen i stedet for at videresende mailen.</p></li>
+<li><h2>2. Viceværten lukker med foto</h2><p>Viceværten ser I dag og lukker opgaver med før- og efter-foto. Billederne viser to forskellige opgaver: én med før-foto og én lukket med efter-foto.</p>
+<figure class="shot"><img src="img/02-foer-foto.png" alt="En opgave i appen med før-foto" width="390" height="844" loading="lazy"></figure>
+<figure class="shot"><img src="img/03-efter-foto.png" alt="En lukket opgave i appen med efter-foto" width="390" height="844" loading="lazy"></figure></li>
+<li><h2>3. De faste ting ligger med dato</h2><p>Tilbagevendende opgaver lægges ind én gang, så man kan se, om årets runde er kørt.</p>
+<figure class="shot"><img src="img/04-aarshjul.png" alt="Kalender i appen med en tilbagevendende opgave" width="390" height="844" loading="lazy"></figure></li>
+</ol>
+<p>Driftschefen kan også se efterslæb.</p>
+<figure class="shot"><img src="img/05-efterslaeb.png" alt="Efterslæb i appen: opgaver, der ikke er lukket" width="390" height="844" loading="lazy"></figure>
+</main>
+<footer class="foot"><div class="wrap">Almen Drift · <a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a> · almendrift.dk</div></footer>
+<script>
+var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>

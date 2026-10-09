@@ -1,0 +1,32 @@
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:1.0625rem;line-height:1.55;color:#1d2327;background:#fafaf7;overflow-wrap:break-word}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1rem}
+a{color:#1f5f8b}
+.top{background:#fff;border-bottom:1px solid #ddd}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-top:.75rem;padding-bottom:.75rem}
+.logo{font-weight:700;font-size:1.2rem;color:#1d2327;text-decoration:none}
+.menu-btn{font:inherit;background:none;border:1px solid #999;border-radius:6px;padding:.3rem .8rem}
+.menu{display:none;width:100%}
+.menu.open{display:block}
+.menu ul{list-style:none;margin:.5rem 0 0;padding:0}
+.menu li a{display:block;padding:.5rem 0;text-decoration:none}
+.menu a[aria-current]{font-weight:700}
+h1{font-size:1.6rem;line-height:1.25;margin:1.5rem 0 1rem}
+h2{font-size:1.2rem;margin:1.5rem 0 .5rem}
+.lead{font-size:1.1rem}
+.points{padding-left:1.2rem}.points li{margin:.5rem 0}
+.shot{margin:1.5rem 0}
+.placeholder{border:2px dashed #aaa;background:#f0f0ec;color:#666;display:flex;align-items:center;justify-content:center;aspect-ratio:9/16;max-width:18rem;margin:0 auto}
+.btn{display:inline-block;background:#1f5f8b;color:#fff;padding:.75rem 1.1rem;border-radius:6px;text-decoration:none;font-weight:600}
+.cta{margin:2rem 0}
+.steps{list-style:none;padding:0}
+.roles dt{font-weight:700;margin-top:1rem}.roles dd{margin:0}
+.foot{border-top:1px solid #ddd;margin-top:3rem;padding:1.5rem 0;font-size:.95rem;color:#555}
+@media (min-width:48rem){
+ .menu-btn{display:none}
+ .menu{display:block;width:auto}
+ .menu ul{display:flex;gap:1.25rem;margin:0}
+ h1{font-size:2.2rem}
+}
+.shot img{display:block;width:100%;max-width:300px;height:auto;margin:0 auto;border:1px solid #ddd;border-radius:12px}

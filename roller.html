@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roller · Almen Drift</title>
+<meta name="description" content="Almen Drift. Opgaveliste til viceværten, i stedet for mail og kalender.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Almen Drift</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu"><ul><li><a href="saadan-virker-det.html">Sådan virker det</a></li><li><a href="roller.html" aria-current="page">Roller</a></li><li><a href="proev.html">Prøv</a></li><li><a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a></li></ul></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Roller</h1>
+<dl class="roles">
+<dt>Vicevært</dt><dd>Dagens liste, foto, luk opgaven.</dd>
+<dt>Admin</dt><dd>Opretter opgaver, brugere og stamdata.</dd>
+<dt>Driftschef</dt><dd>Ser efterslæb og det, der ikke blev lukket.</dd>
+<dt>Bestyrelse</dt><dd>Kort overblik, ikke drift i hverdagen.</dd>
+</dl>
+<figure class="shot"><!-- img/06-brugere.png : Brugere --><div class="placeholder">billede mangler</div></figure>
+</main>
+<footer class="foot"><div class="wrap">Almen Drift · <a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a> · almendrift.dk</div></footer>
+<script>
+var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>
