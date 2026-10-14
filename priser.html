@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priser · Almen Drift</title>
+<meta name="description" content="Almen Drift. Opgaveliste til viceværten, i stedet for mail og kalender.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Almen Drift</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu"><ul><li><a href="saadan-virker-det.html">Sådan virker det</a></li><li><a href="roller.html">Roller</a></li><li><a href="priser.html" aria-current="page">Priser</a></li><li><a href="proev.html">Prøv</a></li><li><a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a></li></ul></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Priser</h1>
+<p class="lead">Tre planer. Forskellen er, hvem der gør arbejdet.</p>
+<div class="plans">
+<article class="plan"><h2>Start</h2><p class="price">Oprettelse: 2.000 kr.</p><p class="price">5 kr. pr. lejlighed pr. måned.</p><p>I får et admin-login. I opretter selv roller og indtaster stamdata på bygningen.</p></article>
+<article class="plan"><h2>Puls</h2><p class="price">Oprettelse: 2.500 kr.</p><p class="price">5 kr. pr. lejlighed pr. måned.</p><p>Vi opretter roller, lejligheder og stamdata for jer. I kan gå i gang med det samme.</p></article>
+<article class="plan"><h2>Premium</h2><p class="price">Oprettelse: 2.500 kr.</p><p class="price">10 kr. pr. lejlighed pr. måned.</p><p>Som Puls, og dertil: I videresender de mails med opgaver, I har godkendt. Vi opretter dem i appen. Viceværten eller servicepartneren får dem på dagens liste. I skal ikke gøre mere.</p></article>
+</div>
+<section class="cta">
+<a class="btn" href="mailto:frederik@almendrift.dk">Skriv til frederik@almendrift.dk</a><p class="tel">Eller ring på <a href="tel:+4591451694">+45 91 45 16 94</a></p>
+</section>
+</main>
+<footer class="foot"><div class="wrap">Almen Drift · <a href="mailto:frederik@almendrift.dk">frederik@almendrift.dk</a> · <a href="tel:+4591451694">+45 91 45 16 94</a> · almendrift.dk</div></footer>
+<script>
+var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+</script>
+</body>
+</html>

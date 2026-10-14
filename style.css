@@ -30,3 +30,9 @@ h2{font-size:1.2rem;margin:1.5rem 0 .5rem}
  h1{font-size:2.2rem}
 }
 .shot img{display:block;width:100%;max-width:300px;height:auto;margin:0 auto;border:1px solid #ddd;border-radius:12px}
+
+.plans{display:grid;gap:1rem;margin:1.5rem 0}
+.plan{border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;background:#fff}
+.plan h2{margin:0 0 .5rem}
+.plan .price{margin:.2rem 0;font-weight:600}
+@media(min-width:760px){.plans{grid-template-columns:repeat(3,1fr)}}
