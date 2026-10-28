@@ -36,3 +36,31 @@ h2{font-size:1.2rem;margin:1.5rem 0 .5rem}
 .plan h2{margin:0 0 .5rem}
 .plan .price{margin:.2rem 0;font-weight:600}
 @media(min-width:760px){.plans{grid-template-columns:repeat(3,1fr)}}
+
+.flow,.compare{margin:2rem 0}
+.flow-steps{list-style:none;margin:1rem 0;padding:0;display:flex;flex-direction:column;gap:1.4rem}
+.flow-steps li{position:relative;display:flex;align-items:center;gap:.8rem;background:#fff;border:1px solid #ddd;border-radius:8px;padding:.7rem .9rem}
+.flow-steps li:not(:last-child)::after{content:"↓";position:absolute;left:1.35rem;bottom:-1.45rem;color:#1f5f8b;font-weight:700;font-size:1.1rem}
+.flow-num{flex:none;width:1.9rem;height:1.9rem;border-radius:50%;background:#1f5f8b;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.flow-tag{display:inline-block;margin-left:.4rem;padding:.05rem .5rem;border-radius:999px;font-size:.8rem;font-weight:700;background:#e4eef6;color:#1f5f8b}
+.flow-mail{border-color:#1f5f8b}
+.flow-done{border-color:#2e7d4f;background:#f1f8f3}
+.flow-done .flow-num{background:#2e7d4f}
+.flow-done .flow-tag{background:#d9eee1;color:#2e7d4f}
+.flow-note{background:#fff;border:1px solid #ddd;border-radius:8px;padding:.7rem .9rem;margin:0}
+.cols{display:grid;gap:1rem;margin:1rem 0}
+.col{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem}
+.col h3{margin:0 0 .3rem;font-size:1.15rem}
+.col-sub{margin:0 0 .6rem;color:#555}
+.col ul{margin:0 0 .8rem;padding-left:1.1rem}
+.col li{margin:.35rem 0}
+.col-price{margin:0;padding-top:.7rem;border-top:1px solid #eee;font-size:.95rem}
+.col-main{border:2px solid #2e7d4f;background:#f1f8f3}
+.col-main h3{color:#2e7d4f}
+.compare-foot{background:#fff;border:1px solid #ddd;border-radius:8px;padding:.8rem .9rem}
+@media(min-width:48rem){
+ .flow-steps{flex-direction:row;align-items:stretch;gap:1.1rem}
+ .flow-steps li{flex:1;flex-direction:column;text-align:center;align-items:center}
+ .flow-steps li:not(:last-child)::after{content:"→";left:auto;right:-1.05rem;bottom:auto;top:50%;transform:translateY(-50%)}
+ .cols{grid-template-columns:repeat(3,1fr)}
+}
