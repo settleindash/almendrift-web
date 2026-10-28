@@ -64,3 +64,6 @@ h2{font-size:1.2rem;margin:1.5rem 0 .5rem}
  .flow-steps li:not(:last-child)::after{content:"→";left:auto;right:-1.05rem;bottom:auto;top:50%;transform:translateY(-50%)}
  .cols{grid-template-columns:repeat(3,1fr)}
 }
+
+.hero-img{margin:1rem 0}
+.hero-img img{display:block;width:100%;height:auto;border:1px solid #ddd;border-radius:12px;background:#fafaf7}
